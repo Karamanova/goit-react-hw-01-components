@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 export const ProfileBox = styled.div`
   margin: 0 auto;
-  width: 310px;
+  width: 450px;
   box-shadow: 0 0 10px -1px;
 `;
 export const Description = styled.div`
-  width: 310px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,29 +24,29 @@ export const Name = styled.p`
   font-weight: bold;
   font-size: 25px;
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
 `;
 export const Tag = styled.p`
     color: #808080;
     font-weight: bold;
     font-size: 20px;
     margin: 0;
-    padding: 20px 0;
+    padding: 5px 0;
 `;
 export const Location = styled.p`
     color: #808080;
     font-weight: bold;
     font-size: 22px;
     margin: 0;
-    padding: 20px 0;
+    padding: 5px 0;
 `;
 export const StatsList = styled.ul`
-  width: 310px;
+  width: 450px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F0FFFF;
+  margin: 0 auto 20px;
 `;
 export const StatsItem = styled.li`
     display: flex;
@@ -56,6 +56,9 @@ export const StatsItem = styled.li`
     justify-content: center;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    margin: 15px;
+    background-color: #AEB6BF;
+    border-radius: 10px;
   &:hover {
     background-color: #6699CC;
   }
@@ -64,7 +67,7 @@ export const StatsLabel = styled.span`
     font-weight: bold;
     font-size: 16px;
     margin: 0;
-    padding: 20px 0;
+    padding: 15px 0;
     color: #000000;
 `;
 export const StatsQuantity = styled.span`
@@ -72,5 +75,5 @@ export const StatsQuantity = styled.span`
     font-size: 16px;
     margin: 0;
     padding: 20px 0;
-    color: #808080;
+    color: #FFFFFF;
 `;

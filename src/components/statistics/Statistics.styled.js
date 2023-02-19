@@ -3,7 +3,7 @@ export const StatisticsBox = styled.section`
   width: 450px;
   box-shadow: 0 0 10px -1px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   background-color: #FFFFFF;
 `;
 export const StatisticsTitle = styled.h2`
@@ -28,7 +28,9 @@ export const StatisticsItem = styled.li`
   cursor: pointer;
   border-top: 1px solid #FFFFFF;
   color: #000000;
-  background-color: #F0FFFF;
+background-color: ${p => {
+    return p.backgroundColor;
+  }};
   font-weight: bold;
 
   }

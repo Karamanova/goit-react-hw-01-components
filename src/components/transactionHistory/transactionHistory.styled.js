@@ -7,10 +7,11 @@ export const TransactionsTable = styled.table`
   overflow: hidden;
   border-collapse: collapse;
   background-color: #000000;
+  margin: 0 auto;
 `;
 export const TableHead = styled.thead`
-  background-color: #F0FFFF;
-  color: #89CFF0;
+  background-color: #34495E;
+  color: #ECF0F1;
   text-transform: uppercase;
 `;
 export const TableBody = styled.tbody`
@@ -23,11 +24,13 @@ export const TableRaw = styled.tr`
     border-bottom: 1px solid #e4e4e4;
   }
   &:nth-of-type(2n) {
-    background-color: #ecf1f4;
+    background-color: #7FB3D5;
   }
-  &:hover,
+  &:hover {
+    background-color: #0047AB;
+  }
   &:nth-of-type(2n):hover {
-    background-color: rgba(93, 159, 159, 0.289);
+    background-color: #C8A2C8;
   }
 `;
 export const HeadCell = styled.th`
