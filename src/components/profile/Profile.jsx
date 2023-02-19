@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import user from 'data/user.json';
 import {
   ProfileBox,
@@ -43,12 +43,12 @@ return (
 </ProfileBox>
 );
 };
-// Profile.propTypes = {
-//     user: PropTypes.shape({
-//     avatar: PropTypes.string.isRequired,
-//     username: PropTypes.string.isRequired,
-//     tag: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     stats: PropTypes.shape(PropTypes.number.isRequired),
-//   }),
-// };
+Profile.propTypes = {
+    user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.shape(PropTypes.number.isRequired),
+  }),
+};

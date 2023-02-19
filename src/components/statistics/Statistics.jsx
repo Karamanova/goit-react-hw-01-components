@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import data from 'data/data.json';
 import {
   StatisticsBox,
@@ -26,13 +26,13 @@ export const Statistics = ({title = 'Upload stats'}) => {
   );
 };
 
-  // Statistics.propTypes = {
-  //   title: PropTypes.string,
-  //   data: PropTypes.arrayOf(
-  //     PropTypes.shape({
-  //       id: PropTypes.string.isRequired,
-  //       label: PropTypes.string.isRequired,
-  //       percentage: PropTypes.number.isRequired,
-  //     })
-  //   ),
-  // }
+  Statistics.propTypes = {
+    title: PropTypes.string,
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+      })
+    ),
+  }
