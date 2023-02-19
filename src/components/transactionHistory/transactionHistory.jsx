@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import transactions from 'data/transactions.json';
 import {
   TransactionsTable,
@@ -7,7 +7,7 @@ import {
   TableRaw,
   HeadCell,
   TableData,
-} from './transactionHistory.styled';
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = () => {
   return (
@@ -32,13 +32,13 @@ export const TransactionHistory = () => {
   );
 };
 
-TransactionHistory.propTypes = {
-  transactions: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    })
-  ),
-};
+// TransactionHistory.propTypes = {
+//   transactions: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       type: PropTypes.string.isRequired,
+//       amount: PropTypes.string.isRequired,
+//       currency: PropTypes.string.isRequired,
+//     })
+//   ),
+// };

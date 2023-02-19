@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import data from 'data/data.json';
 import {
   StatisticsBox,
@@ -7,9 +7,10 @@ import {
   StatisticsItem,
   StatisticsLabel,
   StatisticsPercentage,
-} from './Statistics.styled'
+} from './Statistics.styled';
+import { getRandomHexColor } from 'helpers/getRandomColor';
 
-export const Statistics = ({title,data,id,label,percentage}) => {
+export const Statistics = ({title = 'Upload stats'}) => {
   return (
     <StatisticsBox>
       {title && <StatisticsTitle>{title}</StatisticsTitle>}
@@ -25,13 +26,13 @@ export const Statistics = ({title,data,id,label,percentage}) => {
   );
 };
 
-  Statistics.propTypes = {
-    title: PropTypes.string,
-    data: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired,
-        percentage: PropTypes.number.isRequired,
-      })
-    ),
-  }
+  // Statistics.propTypes = {
+  //   title: PropTypes.string,
+  //   data: PropTypes.arrayOf(
+  //     PropTypes.shape({
+  //       id: PropTypes.string.isRequired,
+  //       label: PropTypes.string.isRequired,
+  //       percentage: PropTypes.number.isRequired,
+  //     })
+  //   ),
+  // }
