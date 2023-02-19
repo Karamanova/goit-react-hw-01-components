@@ -22,7 +22,7 @@ export const Avatar = styled.img`
 export const Name = styled.p`
   color: #000000;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 26px;
   margin: 0;
   padding: 10px 0;
 `;
